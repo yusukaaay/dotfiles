@@ -1,0 +1,19 @@
+" 検索時に大文字小文字を区別しない
+:set ignorecase
+
+" 検索パターンに大文字が含まれる場合のみ大文字小文字区別
+:set smartcase
+
+set tabstop=4
+
+set shiftwidth=4
+
+"カーソル位置の単語をyankする
+"nnoremap vv vawy
+
+" Redo
+nnoremap U  :Redo<CR>
+
+" Insert mode中で単語単位/行単位の削除をアンドゥ可能にする
+inoremap <C-u>  <C-g>u<C-u>
+inoremap <C-w>  <C-g>u<C-w>
